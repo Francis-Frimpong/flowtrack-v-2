@@ -9,8 +9,7 @@
     <title>{{$title ?? 'Workopia | Find and list jobs'}}</title>
 </head>
 <body class="">
-    <x-header />
-    <x-hero />
+ 
     <main class="container mx-auto p-4 mt-4">
         {{ $slot }}
     </main>
