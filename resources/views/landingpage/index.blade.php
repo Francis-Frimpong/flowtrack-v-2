@@ -60,7 +60,7 @@
 <div class="bg-white p-[25px] rounded-2xl shadow-lg">
 <h3 class=" mb-10 text-2xl font-bold">Dashboard Overview</h3>
 
-<div class="grid gap-5  grid-cols-2 md:grid-cols-4">
+<div class="grid gap-5 grid-cols-2 md:grid-cols-4">
 
          <x-card
                 title="4.5h"
