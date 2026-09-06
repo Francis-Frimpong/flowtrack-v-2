@@ -5,6 +5,7 @@
         FlowTrack helps students, developers, freelancers, and professionals track tasks,
         manage focus sessions, and build productive habits every day.
         </p>
-        <a href="#"  class="inline-block px-6 py-3.5 bg-blue-600 text-white rounded-[10px] no-underline">Start Free</a>
+       <x-button-link>Start Free</x-button-link>
     </div>
+    
 </section>
