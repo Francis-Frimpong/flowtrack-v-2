@@ -53,5 +53,40 @@
     </div>
 </section>
 
+<section class="py-20 bg-slate-50">
+<div class="container w-[92%] max-w-[1100px] mx-auto">
+<h2 class="text-center mb-10 text-3xl font-bold">Product Preview</h2>
+
+<div class="bg-white p-[25px] rounded-2xl shadow-lg">
+<h3 class=" mb-10 text-2xl font-bold">Dashboard Overview</h3>
+
+<div class="grid gap-5  grid-cols-2 md:grid-cols-4">
+
+         <x-card
+                title="4.5h"
+                text="Focus Time"
+                class="bg-blue-50 p-5 rounded-xl text-center"
+          />
+         <x-card
+                title="12"
+                text="Tasks Done"
+                class="bg-blue-50 p-5 rounded-xl text-center"
+          />
+         <x-card
+                title="9 Days"
+                text="Streak"
+                class="bg-blue-50 p-5 rounded-xl text-center"
+          />
+         <x-card
+                title="78%"
+                text="Weekly Goal"
+                class="bg-blue-50 p-5 rounded-xl text-center"
+          />
+
+</div>
+</div>
+</div>
+</section>
+
 </body>
 </html>
