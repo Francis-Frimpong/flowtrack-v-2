@@ -88,5 +88,17 @@
 </div>
 </section>
 
+<section class="cta py-20 text-center bg-slate-900 text-white">
+<div class="container w-[92%] max-w-[1100px] mx-auto">
+<h2 class="text-3xl font-bold mb-5">Ready to Take Control of Your Time?</h2>
+<p class="max-w-[700px] mx-auto mb-[30px] text-lg">Join FlowTrack and start building better habits today.</p>
+<br>
+<x-button-link >Get Started</x-button-link>
+</div>
+</section>
+<footer class="p-[30px] text-center bg-gray-900 text-slate-300">
+   <p>&copy; {{ date('Y') }} FlowTrack. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
