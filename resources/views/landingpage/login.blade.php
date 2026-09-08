@@ -9,42 +9,42 @@
 <title>FlowTrack Login</title>
 
 </head>
-<body>
-<div class="container">
-<div class="left">
-<div class="logo">FlowTrack</div>
-<h1>Welcome Back</h1>
-<p class="subtitle">Sign in to continue tracking your productivity.</p>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-blue-800">
+<div class="w-[92%] max-w-[950px] grid grid-cols-1 md:grid-cols-2 bg-white rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+<div class="left p-[50px]">
+<div class="logo  text-[1.8rem] font-bold text-blue-600 mb-10">FlowTrack</div>
+<h1 class="mb-2 font-bold text-[2rem]">Welcome Back</h1>
+<p class="subtitle text-gray-500 mb-[25px]">Sign in to continue tracking your productivity.</p>
 <form action="" method="post" class="form">
 
-    <div class="form-group">
-    <label>Email Address</label>
-    <input type="email" placeholder="you@example.com">
+    <div class="form-group mb-[18px]">
+    <label class="block mb-2">Email Address</label>
+    <input type="email" placeholder="you@example.com" class="w-full p-[14px] border border-gray-300 rounded-[10px]">
     </div>
     
-    <div class="form-group">
-    <label>Password</label>
-    <input type="password" placeholder="••••••••">
+    <div class="form-group mb-[18px]">
+    <label class="block mb-2">Password</label>
+    <input type="password" placeholder="••••••••" class="w-full p-[14px] border border-gray-300 rounded-[10px]">
     </div>
     
-    <div class="options">
+    <div class="options flex justify-between my-[15px] mb-[25px] text-[0.9rem]">
     <span>Remember Me</span>
     <a href="#">Forgot Password?</a>
     </div>
     
-    <button>Sign In</button>
+    <button class="w-full p-[14px] border-0 rounded-[10px] bg-blue-600 text-white cursor-pointer">Sign In</button>
     
-    <div class="signup">Don't have an account? Create Account</div>
+    <div class="signup text-center mt-5">Don't have an account? Create Account</div>
     </div>
 </form>
 
-<div class="right">
-<h2>Stay Focused. Stay Consistent.</h2>
+<div class="right hidden md:flex bg-slate-900 text-white p-[50px] flex-col justify-center">
+<h2 class="font-bold text-[1.5rem]">Stay Focused. Stay Consistent.</h2>
 <p>Manage tasks, track focus sessions, and build productive habits with FlowTrack.</p>
-<div class="feature">✓ Track daily tasks</div>
-<div class="feature">✓ Monitor focus sessions</div>
-<div class="feature">✓ View analytics</div>
-<div class="feature">✓ Build productivity streaks</div>
+<div class="feature mt-[12px]">✓ Track daily tasks</div>
+<div class="feature mt-[12px]">✓ Monitor focus sessions</div>
+<div class="feature mt-[12px]">✓ View analytics</div>
+<div class="feature mt-[12px]">✓ Build productivity streaks</div>
 </div>
 </div>
 </body>
