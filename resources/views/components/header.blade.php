@@ -6,7 +6,7 @@
                 <x-nav-link url="/">Features</x-nav-link>
                 <x-nav-link url="/">Pricing</x-nav-link>
                 <x-nav-link url="/">About</x-nav-link>
-                <x-nav-link url="/">Login</x-nav-link>
+                <x-nav-link url="/login">Login</x-nav-link>
               
             </div>
         </nav>
