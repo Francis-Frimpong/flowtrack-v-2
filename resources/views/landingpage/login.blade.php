@@ -18,13 +18,27 @@
 <form action="" method="post" class="form">
 
     <div class="form-group mb-[18px]">
-    <label class="block mb-2">Email Address</label>
-    <input type="email" placeholder="you@example.com" class="w-full p-[14px] border border-gray-300 rounded-[10px]">
+        <x-form-input
+            labelClass="block mb-2"
+            inputClass="w-full p-[14px] border border-gray-300 rounded-[10px]"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+        >
+            Email address
+        </x-form-input>
     </div>
     
     <div class="form-group mb-[18px]">
-    <label class="block mb-2">Password</label>
-    <input type="password" placeholder="••••••••" class="w-full p-[14px] border border-gray-300 rounded-[10px]">
+        <x-form-input
+            labelClass="block mb-2"
+            inputClass="w-full p-[14px] border border-gray-300 rounded-[10px]"
+            type="password"
+            name="password"
+            placeholder="••••••••"
+        >
+            Password
+        </x-form-input>
     </div>
     
     <div class="options flex justify-between my-[15px] mb-[25px] text-[0.9rem]">
@@ -34,7 +48,7 @@
     
     <x-button class="w-full p-[14px] border-0 rounded-[10px] bg-blue-600 text-white cursor-pointer">Sign In</x-button>
     
-    <div class="signup text-center mt-5">Don't have an account? <x-button-link>Create Account</x-button-link></div>
+    <div class="signup text-center mt-5">Don't have an account? <x-button-link class="text-blue-600">Create Account</x-button-link></div>
     </div>
 </form>
 
