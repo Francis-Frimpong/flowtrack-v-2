@@ -22,7 +22,7 @@
         <x-nav-link url="/" :mobile="true"> Features</x-nav-link>
         <x-nav-link url="/" :mobile="true"> Price</x-nav-link>
         <x-nav-link url="/" :mobile="true"> About</x-nav-link>
-        <x-nav-link url="login" :mobile="true">Login</x-nav-link>
+        <x-nav-link url="/login" :mobile="true">Login</x-nav-link>
     
     </div>
     </div>

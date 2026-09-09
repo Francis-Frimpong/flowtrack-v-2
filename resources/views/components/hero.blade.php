@@ -10,7 +10,7 @@
             manage focus sessions, and build productive habits every day.
         </p>
 
-        <x-button-link>Start Free</x-button-link>
+        <x-button-link url="/login" class="inline-block px-6 py-3.5 bg-blue-600 text-white rounded-[10px] no-underline">Start Free</x-button-link>
 
     </div>
 </section>

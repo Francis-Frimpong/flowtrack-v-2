@@ -94,7 +94,7 @@
 <h2 class="text-3xl font-bold mb-5">Ready to Take Control of Your Time?</h2>
 <p class="max-w-[700px] mx-auto mb-[30px] text-lg">Join FlowTrack and start building better habits today.</p>
 <br>
-<x-button-link >Get Started</x-button-link>
+<x-button-link url="/login" class="inline-block px-6 py-3.5 bg-blue-600 text-white rounded-[10px] no-underline">Get Started</x-button-link>
 </div>
 </section>
 <footer class="p-[30px] text-center bg-gray-900 text-slate-300">

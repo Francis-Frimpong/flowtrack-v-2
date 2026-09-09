@@ -29,12 +29,12 @@
     
     <div class="options flex justify-between my-[15px] mb-[25px] text-[0.9rem]">
     <span>Remember Me</span>
-    <a href="#">Forgot Password?</a>
+    <x-button-link url="#">Forgot Password?</x-button-link>
     </div>
     
-    <button class="w-full p-[14px] border-0 rounded-[10px] bg-blue-600 text-white cursor-pointer">Sign In</button>
+    <x-button class="w-full p-[14px] border-0 rounded-[10px] bg-blue-600 text-white cursor-pointer">Sign In</x-button>
     
-    <div class="signup text-center mt-5">Don't have an account? Create Account</div>
+    <div class="signup text-center mt-5">Don't have an account? <x-button-link>Create Account</x-button-link></div>
     </div>
 </form>
 
