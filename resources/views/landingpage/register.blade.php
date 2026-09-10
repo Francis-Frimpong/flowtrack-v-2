@@ -12,55 +12,58 @@
 
 </head>
 
-<body>
+<body class="font-[Arial,sans-serif] min-h-screen flex items-center justify-center py-[30px] px-[15px] bg-gradient-to-br from-slate-900 to-blue-800">
 
-    <div class="container">
+    <div class="container    w-full max-w-[950px] grid grid-cols-1 md:grid-cols-2 bg-white rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
 
         <!-- Registration Form -->
 
-        <section class="form-section">
+        <section class="form-section p-[45px]">
 
-            <div class="logo">
+            <div class="logo  text-[1.8rem] font-bold text-blue-600 mb-[30px]">
                 FlowTrack
             </div>
 
-            <h1>Create Your Account</h1>
+            <h1 class="text-[2rem] mb-2 text-gray-900">Create Your Account</h1>
 
-            <p class="subtitle">
+            <p class="subtitle text-gray-500 mb-[25px]">
                 Start tracking your productivity and reaching your goals.
             </p>
 
-            <form>
-
+            <form method="POST" action="">
+                @csrf
                 <!-- First and Last Name -->
 
-                <div class="form-row">
+                <div class="form-row  grid grid-cols-2 gap-[15px]">
 
-                    <div class="form-group">
-                        <label for="first-name">
-                            First Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="first-name"
-                            name="first_name"
-                            placeholder="John"
-                        >
+                    
+                    <div class="form-group mb-[16px]">
+                          <x-form-input
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
+                        type="text"
+                        name="first_name"
+                        placeholder="John"
+                        for="first-name"
+                    >
+                        First Name
+                    </x-form-input>
+                     
+                    </div>
+                    <div class="form-group mb-[16px]">
+                          <x-form-input
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
+                        type="text"
+                        name="last_name"
+                        placeholder="Doe"
+                        for="last-name"
+                    >
+                        last Name
+                    </x-form-input>
+                     
                     </div>
 
-                    <div class="form-group">
-                        <label for="last-name">
-                            Last Name
-                        </label>
-
-                        <input
-                            type="text"
-                            id="last-name"
-                            name="last_name"
-                            placeholder="Doe"
-                        >
-                    </div>
 
                 </div>
 
@@ -130,9 +133,9 @@
 
                 <!-- Submit -->
                
-                {{-- <x-button  class="w-full py-3 px-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700" type="submit">
+                 <x-button  class="w-full py-3 px-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700" type="submit">
                     Create Account
-                </x-button> --}}
+                </x-button>
 
             </form>
 

@@ -16,7 +16,7 @@
 <h1 class="mb-2 font-bold text-[2rem]">Welcome Back</h1>
 <p class="subtitle text-gray-500 mb-[25px]">Sign in to continue tracking your productivity.</p>
 <form action="" method="post" class="form">
-
+    @csrf
     <div class="form-group mb-[18px]">
         <x-form-input
             labelClass="block mb-2"
