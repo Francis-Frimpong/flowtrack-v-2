@@ -48,7 +48,7 @@
     
     <x-button class="w-full p-[14px] border-0 rounded-[10px] bg-blue-600 text-white cursor-pointer">Sign In</x-button>
     
-    <div class="signup text-center mt-5">Don't have an account? <x-button-link class="text-blue-600">Create Account</x-button-link></div>
+    <div class="signup text-center mt-5">Don't have an account? <x-button-link url="/register" class="text-blue-600 font-bold">Create Account</x-button-link></div>
     </div>
 </form>
 

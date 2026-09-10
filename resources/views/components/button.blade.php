@@ -1,2 +1,2 @@
- @props(['class' => null])
- <button class="{{ $class }}">{{ $slot }}</button>
+ @props(['class' => null, 'type' => null])
+ <button class="{{ $class }}" type="{{ $type }}">{{ $slot }}</button>
