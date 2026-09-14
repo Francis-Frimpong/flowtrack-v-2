@@ -142,7 +142,7 @@
 
             <p class="text-center mt-5 text-gray-500 text-[0.9rem]">
                 Already have an account?
-                <a href="#"  class="text-blue-600 no-underline">
+                <a href="/login"  class="text-blue-600 no-underline">
                     Sign In
                 </a>
             </p>
