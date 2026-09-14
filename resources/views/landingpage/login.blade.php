@@ -24,9 +24,13 @@
             type="email"
             name="email"
             placeholder="you@example.com"
+            value="{{ old('email') }}"
         >
             Email address
         </x-form-input>
+        @error('email')
+            <div class="text-red-500 mt-2 text-sm">{{$message}}</div>
+        @enderror
     </div>
     
     <div class="form-group mb-[18px]">
@@ -36,9 +40,13 @@
             type="password"
             name="password"
             placeholder="••••••••"
+            value="{{ old('password') }}"
         >
             Password
         </x-form-input>
+        @error('password')
+            <div class="text-red-500 mt-2 text-sm">{{$message}}</div>
+        @enderror
     </div>
     
     <div class="options flex justify-between my-[15px] mb-[25px] text-[0.9rem]">
