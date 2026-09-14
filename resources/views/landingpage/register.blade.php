@@ -71,62 +71,61 @@
 
                 <div class="form-group">
 
-                    <label for="email">
-                        Email Address
-                    </label>
-
-                    <input
+                    <x-form-input
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="email"
                         id="email"
                         name="email"
                         placeholder="you@example.com"
                     >
+                        Email Address
+                    </x-form-input>
+                  
 
                 </div>
 
                 <!-- Password -->
 
                 <div class="form-group">
-
-                    <label for="password">
-                        Password
-                    </label>
-
-                    <input
+                       <x-form-input
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
                         id="password"
                         name="password"
                         placeholder="Create a password"
                     >
+                        Password
+                    </x-form-input>
 
                 </div>
 
                 <!-- Confirm Password -->
 
                 <div class="form-group">
-
-                    <label for="password-confirmation">
-                        Confirm Password
-                    </label>
-
-                    <input
+                     <x-form-input
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
                         id="password-confirmation"
                         name="password_confirmation"
                         placeholder="Confirm your password"
                     >
+                        Confirm Password
+                    </x-form-input>
 
                 </div>
 
                 <!-- Terms -->
 
-                <p class="terms">
+                <p class="text-[0.85rem] text-gray-500 my-[18px]">
                     By creating an account, you agree to our
-                    <a href="#">
+                    <a href="#" class="text-blue-600 no-underline">
                         Terms of Service
                     </a>
                     and
-                    <a href="#">
+                    <a href="#" class="text-blue-600 no-underline">
                         Privacy Policy
                     </a>.
                 </p>
@@ -141,9 +140,9 @@
 
             <!-- Login -->
 
-            <p class="login">
+            <p class="text-center mt-5 text-gray-500 text-[0.9rem]">
                 Already have an account?
-                <a href="#">
+                <a href="#"  class="text-blue-600 no-underline">
                     Sign In
                 </a>
             </p>
