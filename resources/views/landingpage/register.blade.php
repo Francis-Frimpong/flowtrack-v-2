@@ -14,11 +14,11 @@
 
 <body class="font-[Arial,sans-serif] min-h-screen flex items-center justify-center py-[30px] px-[15px] bg-gradient-to-br from-slate-900 to-blue-800">
 
-    <div class="container    w-full max-w-[950px] grid grid-cols-1 md:grid-cols-2 bg-white rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
+    <div class="container  grid grid-cols-1 md:grid-cols-2  w-full max-w-[950px] grid grid-cols-1 md:grid-cols-2 bg-white rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
 
         <!-- Registration Form -->
 
-        <section class="form-section p-[45px]">
+        <section class="form-section p-[35px] md:p-[50px] p-[45px]">
 
             <div class="logo  text-[1.8rem] font-bold text-blue-600 mb-[30px]">
                 FlowTrack
@@ -89,7 +89,7 @@
 
                 <div class="form-group">
                        <x-form-input
-                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700 mt-[7px]"
                         inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
                         id="password"
@@ -105,7 +105,7 @@
 
                 <div class="form-group">
                      <x-form-input
-                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
+                        labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700 mt-[7px]"
                         inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
                         id="password-confirmation"
@@ -152,35 +152,35 @@
 
         <!-- Information Section -->
 
-        <section class="info-section">
+        <section class="hidden md:flex bg-slate-900 text-white p-[45px] flex flex-col justify-center ">
 
-            <h2>
+            <h2 class="text-3xl md:text-4xl mb-[15px]">
                 Build Better Habits.
             </h2>
 
-            <p>
+            <p class="text-slate-300 mb-[25px]">
                 FlowTrack gives you a simple place to organize
                 your work, track your focus, and understand
                 your productivity.
             </p>
 
-            <div class="feature">
-                <span class="check">✓</span>
+            <div class="flex gap-3 mb-[15px] text-gray-200">
+                <span class="text-blue-400 font-bold">✓</span>
                 <span>Organize your daily tasks</span>
             </div>
 
-            <div class="feature">
-                <span class="check">✓</span>
+            <div class="flex gap-3 mb-[15px] text-gray-200">
+                <span class="text-blue-400 font-bold">✓</span>
                 <span>Track focused work sessions</span>
             </div>
 
-            <div class="feature">
-                <span class="check">✓</span>
+            <div class="flex gap-3 mb-[15px] text-gray-200">
+                <span class="text-blue-400 font-bold">✓</span>
                 <span>Monitor your productivity</span>
             </div>
 
-            <div class="feature">
-                <span class="check">✓</span>
+            <div class="flex gap-3 mb-[15px] text-gray-200">
+                <span class="text-blue-400 font-bold">✓</span>
                 <span>Build consistent habits</span>
             </div>
 
