@@ -10,6 +10,7 @@
 
 </head>
 <body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 to-blue-800">
+  
 <div class="w-[92%] max-w-[950px] grid grid-cols-1 md:grid-cols-2 bg-white rounded-[20px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.2)]">
 <div class="left p-[50px]">
 <div class="logo  text-[1.8rem] font-bold text-blue-600 mb-10">FlowTrack</div>

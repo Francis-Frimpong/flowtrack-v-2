@@ -30,7 +30,7 @@
                 Start tracking your productivity and reaching your goals.
             </p>
 
-            <form method="POST" action="">
+            <form method="POST" action="{{ route('register.store') }}">
                 @csrf
                 <!-- First and Last Name -->
 
@@ -44,7 +44,7 @@
                         type="text"
                         name="first_name"
                         placeholder="John"
-                        for="first-name"
+                        for="first_name"
                     >
                         First Name
                     </x-form-input>
@@ -57,7 +57,7 @@
                         type="text"
                         name="last_name"
                         placeholder="Doe"
-                        for="last-name"
+                        for="last_name"
                     >
                         last Name
                     </x-form-input>
@@ -75,7 +75,7 @@
                         labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700"
                         inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="email"
-                        id="email"
+                        for="email"
                         name="email"
                         placeholder="you@example.com"
                     >
@@ -92,7 +92,7 @@
                         labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700 mt-[7px]"
                         inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
-                        id="password"
+                        for="password"
                         name="password"
                         placeholder="Create a password"
                     >
@@ -108,7 +108,7 @@
                         labelClass="block text-[0.9rem] font-semibold mb-[7px] text-gray-700 mt-[7px]"
                         inputClass="w-full py-[13px] px-[14px] border border-gray-300 rounded-[10px] text-base outline-none focus:border-blue-600 focus:ring-[3px] focus:ring-blue-600/10"
                         type="password"
-                        id="password-confirmation"
+                        for="password_confirmation"
                         name="password_confirmation"
                         placeholder="Confirm your password"
                     >
@@ -132,7 +132,7 @@
 
                 <!-- Submit -->
                
-                 <x-button  class="w-full py-3 px-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700" type="submit">
+                 <x-button type="submit"  class="w-full py-3 px-4 rounded-lg bg-blue-600 text-white font-semibold hover:bg-blue-700" type="submit">
                     Create Account
                 </x-button>
 
