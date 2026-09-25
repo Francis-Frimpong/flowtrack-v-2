@@ -8,8 +8,8 @@ use Illuminate\Support\Facades\Route;
 // View or show the landing page
 Route::view('/', 'landingpage.index')->name('home');
 
-Route::get('/login', [LoginController::class, 'login']);
-Route::post('/login', [LoginController::class, 'authenticate']);
+Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::post('/login', [LoginController::class, 'authenticate'])->name('login.authenticate');
 Route::get('/register', [RegisterController::class, 'register'])
     ->name('register');
 
