@@ -22,11 +22,21 @@ class loginController extends Controller
         if(Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return redirect()->intended(route('home'))->with('success', 'You are now logged in!');
+            return redirect()->intended(route('dashboard'))->with('success', 'You are now logged in!');
         }
 
           return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
         ])->onlyInput('email');
+    }
+
+    public function logout(Request $request): RedirectResponse
+    {
+        Auth::logout(); // Log out the user
+
+        $request->session()->invalidate(); // Invalidate the session
+        $request->session()->regenerateToken(); // Regenerate the CSRF token
+
+        return redirect('/');
     }
 }

@@ -3,10 +3,22 @@
         <h1 class="text-[2rem] md:text-5xl text-3xl font-semibold">FlowTrack</h1>
         <nav class="hidden md:flex items- space-x-4 flex gap-5">
             <div class="nav-links space-x-4">
+                @auth
+                  <form method="POST" action="{{ route('logout') }}">
+                    @csrf
+                    <button type="submit" class="text-white">
+                    <i class="fa fa-sign-out"></i> Logout
+                    </button>
+                 </form>
+                <x-nav-link url="/login">Profile</x-nav-link>
+
+                @else
                 <x-nav-link url="/">Features</x-nav-link>
                 <x-nav-link url="/">Pricing</x-nav-link>
                 <x-nav-link url="/">About</x-nav-link>
                 <x-nav-link url="/login">Login</x-nav-link>
+                    
+                @endauth
               
             </div>
         </nav>
@@ -19,10 +31,21 @@
         id="mobile-menu"
         class="hidden md:hidden text-white mt-5 pb-4 space-y-2"
     >
+        @auth
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="text-white">
+                    <i class="fa fa-sign-out"></i> Logout
+                </button>
+            </form>
+            <x-nav-link url="" :mobile="true">Profile</x-nav-link>
+        @else
+            
         <x-nav-link url="/" :mobile="true"> Features</x-nav-link>
         <x-nav-link url="/" :mobile="true"> Price</x-nav-link>
         <x-nav-link url="/" :mobile="true"> About</x-nav-link>
         <x-nav-link url="/login" :mobile="true">Login</x-nav-link>
+        @endauth
     
     </div>
     </div>

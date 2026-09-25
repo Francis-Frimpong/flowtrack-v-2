@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\RegisterController;
@@ -15,3 +16,8 @@ Route::get('/register', [RegisterController::class, 'register'])
 
 Route::post('/register', [RegisterController::class, 'store'])
     ->name('register.store');
+
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
